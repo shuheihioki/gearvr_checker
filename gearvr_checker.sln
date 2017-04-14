@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D08FF2C6-3853-85D3-7349-AF9233834209}") = "gearvr_checker", "Assembly-CSharp.csproj", "{73CE855E-415A-F795-9E34-3FB50525AE3A}"
+EndProject
+Project("{D08FF2C6-3853-85D3-7349-AF9233834209}") = "gearvr_checker", "Assembly-CSharp-Editor-firstpass.csproj", "{F3249909-8D11-9EAB-D942-696544D6AEB6}"
+EndProject
+Project("{D08FF2C6-3853-85D3-7349-AF9233834209}") = "gearvr_checker", "Assembly-CSharp-Editor.csproj", "{01BB13A4-7147-A004-C7A5-F524CAD2F1F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73CE855E-415A-F795-9E34-3FB50525AE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CE855E-415A-F795-9E34-3FB50525AE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CE855E-415A-F795-9E34-3FB50525AE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CE855E-415A-F795-9E34-3FB50525AE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3249909-8D11-9EAB-D942-696544D6AEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3249909-8D11-9EAB-D942-696544D6AEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3249909-8D11-9EAB-D942-696544D6AEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3249909-8D11-9EAB-D942-696544D6AEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01BB13A4-7147-A004-C7A5-F524CAD2F1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01BB13A4-7147-A004-C7A5-F524CAD2F1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01BB13A4-7147-A004-C7A5-F524CAD2F1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01BB13A4-7147-A004-C7A5-F524CAD2F1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
