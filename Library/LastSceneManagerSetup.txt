@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scene/VRChecker.unity
+  isLoaded: 1
+  isActive: 1
