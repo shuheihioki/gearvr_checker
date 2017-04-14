@@ -10,17 +10,15 @@ public class ChangeTexture : MonoBehaviour {
 	public string _keyB;
 	int _index = 0;
 	
-	bool isRunning = false;
+	private bool isRunning = false;
 	
 	IEnumerator changeTex(float _sec){
-		if (isRunning)
-			yield break;
+		if (isRunning) yield break;
+		
 		isRunning = true;
 		
 		int _texNum = _textures.Length;
-		
-		//Debug.Log("Corutine");
-		
+				
 		if (Input.GetKey(_keyA))
 		{
 			_index += 1;
@@ -43,14 +41,11 @@ public class ChangeTexture : MonoBehaviour {
 			_rend.material.mainTexture = _textures[_index];	
 		}
 		
-		isRunning = false;
+		yield return new WaitForSeconds(_sec);
 		
+		isRunning = false;
 		Debug.Log("index" + _index);
 		//Debug.Log("Tex" + _texNum);
-		
-		yield return new WaitForSeconds(_sec);
-		//yield break;
-		
 	}
 
 	// Use this for initialization
@@ -63,7 +58,7 @@ public class ChangeTexture : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		StartCoroutine(changeTex(5));
+		StartCoroutine(changeTex(0.1f));
 		
 	}
 }

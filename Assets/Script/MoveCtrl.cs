@@ -5,15 +5,23 @@ using UnityEngine;
 public class MoveCtrl : MonoBehaviour {
 
     public GameObject _moveNode;
-    public float _offset;
+	public float _offset;
+	
+	/*
     public string _keyForward;
     public string _keyBack;
     public string _keyUp;
     public string _keyDown;
+	*/
 
     void moving()
-    {
-
+	{
+		
+		_moveNode.transform.Translate(Vector3.forward * Time.deltaTime * _offset * Input.GetAxis("Horizontal"), Space.World);
+		
+		_moveNode.transform.Translate(Vector3.up * Time.deltaTime * _offset * Input.GetAxis("Vertical"), Space.World);
+	    
+	    /*
         if (Input.GetKey(_keyForward))
         {
 	        _moveNode.transform.Translate(Vector3.forward * Time.deltaTime * _offset, Space.World);
@@ -33,7 +41,8 @@ public class MoveCtrl : MonoBehaviour {
         {
             _moveNode.transform.Translate(Vector3.down * Time.deltaTime * _offset, Space.World);
         }
-
+*/
+	    
     }
 
     // Use this for initialization
